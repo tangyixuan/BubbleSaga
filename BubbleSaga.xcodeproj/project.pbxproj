@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		714C544718BE20AB001F55EB /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 714C544618BE20AB001F55EB /* Stack.m */; };
+		71D2B3B518C31DBE00C276A2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D2B3B418C31DBE00C276A2 /* icon.png */; };
+		71D2B3B718C328B300C276A2 /* backgroudMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71D2B3B618C328B300C276A2 /* backgroudMusic.mp3 */; };
+		71D2B3B918C329B800C276A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D2B3B818C329B800C276A2 /* AVFoundation.framework */; };
+		71D2B3BB18C32B3500C276A2 /* music-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D2B3BA18C32B3500C276A2 /* music-button.png */; };
+		A459775418C2CFA0004A3498 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774418C2CFA0004A3498 /* background.png */; };
+		A459775618C2CFA0004A3498 /* bubble-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774618C2CFA0004A3498 /* bubble-blue.png */; };
+		A459775718C2CFA0004A3498 /* bubble-bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774718C2CFA0004A3498 /* bubble-bomb.png */; };
+		A459775918C2CFA0004A3498 /* bubble-green.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774918C2CFA0004A3498 /* bubble-green.png */; };
+		A459775A18C2CFA0004A3498 /* bubble-indestructible.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774A18C2CFA0004A3498 /* bubble-indestructible.png */; };
+		A459775B18C2CFA0004A3498 /* bubble-lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774B18C2CFA0004A3498 /* bubble-lightning.png */; };
+		A459775C18C2CFA0004A3498 /* bubble-orange.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774C18C2CFA0004A3498 /* bubble-orange.png */; };
+		A459775D18C2CFA0004A3498 /* bubble-red.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774D18C2CFA0004A3498 /* bubble-red.png */; };
+		A459775E18C2CFA0004A3498 /* bubble-star.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774E18C2CFA0004A3498 /* bubble-star.png */; };
+		A459775F18C2CFA0004A3498 /* cannon-base.png in Resources */ = {isa = PBXBuildFile; fileRef = A459774F18C2CFA0004A3498 /* cannon-base.png */; };
+		A459776118C2CFA0004A3498 /* cannon.png in Resources */ = {isa = PBXBuildFile; fileRef = A459775118C2CFA0004A3498 /* cannon.png */; };
+		A459776218C2CFA0004A3498 /* eraser-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A459775218C2CFA0004A3498 /* eraser-1.png */; };
+		A459776318C2CFA0004A3498 /* eraser-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A459775318C2CFA0004A3498 /* eraser-2.png */; };
+		A459776618C2D1E5004A3498 /* background3.png in Resources */ = {isa = PBXBuildFile; fileRef = A459776518C2D1E5004A3498 /* background3.png */; };
+		A45DE4FB18C1907F002D86AD /* GameBubbleIndestructible.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DE4FA18C1907F002D86AD /* GameBubbleIndestructible.m */; };
+		A45DE4FE18C190A5002D86AD /* GameBubbleLightening.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DE4FD18C190A5002D86AD /* GameBubbleLightening.m */; };
+		A45DE50118C190B8002D86AD /* GameBubbleBomb.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DE50018C190B8002D86AD /* GameBubbleBomb.m */; };
+		A45DE50418C190CE002D86AD /* GameBubbleStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DE50318C190CE002D86AD /* GameBubbleStar.m */; };
+		A45DE50718C1E61C002D86AD /* FileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DE50618C1E61C002D86AD /* FileListViewController.m */; };
+		A47BB48118C39D1D0042AC39 /* default-level-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A47BB47E18C39D1D0042AC39 /* default-level-1.png */; };
+		A47BB48218C39D1D0042AC39 /* default-level-0.png in Resources */ = {isa = PBXBuildFile; fileRef = A47BB47F18C39D1D0042AC39 /* default-level-0.png */; };
+		A47BB48318C39D1D0042AC39 /* default-level-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A47BB48018C39D1D0042AC39 /* default-level-2.png */; };
+		A497282F18BB50EE00F8A419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497282E18BB50EE00F8A419 /* Foundation.framework */; };
+		A497283118BB50EE00F8A419 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497283018BB50EE00F8A419 /* CoreGraphics.framework */; };
+		A497283318BB50EE00F8A419 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497283218BB50EE00F8A419 /* UIKit.framework */; };
+		A497283918BB50EE00F8A419 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A497283718BB50EE00F8A419 /* InfoPlist.strings */; };
+		A497283B18BB50EE00F8A419 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A497283A18BB50EE00F8A419 /* main.m */; };
+		A497283F18BB50EE00F8A419 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A497283E18BB50EE00F8A419 /* AppDelegate.m */; };
+		A497284218BB50EE00F8A419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A497284018BB50EE00F8A419 /* Main.storyboard */; };
+		A497284518BB50EE00F8A419 /* GamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A497284418BB50EE00F8A419 /* GamePlayViewController.m */; };
+		A497284718BB50EE00F8A419 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A497284618BB50EE00F8A419 /* Images.xcassets */; };
+		A497284E18BB50EE00F8A419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497284D18BB50EE00F8A419 /* XCTest.framework */; };
+		A497284F18BB50EE00F8A419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497282E18BB50EE00F8A419 /* Foundation.framework */; };
+		A497285018BB50EE00F8A419 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497283218BB50EE00F8A419 /* UIKit.framework */; };
+		A497285818BB50EE00F8A419 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A497285618BB50EE00F8A419 /* InfoPlist.strings */; };
+		A497285A18BB50EE00F8A419 /* BubbleSagaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A497285918BB50EE00F8A419 /* BubbleSagaTests.m */; };
+		A497286718BB50FF00F8A419 /* BubbleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = A497286418BB50FF00F8A419 /* BubbleBuffer.m */; };
+		A497286818BB50FF00F8A419 /* BubbleCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = A497286618BB50FF00F8A419 /* BubbleCollection.m */; };
+		A497287418BB51A900F8A419 /* GameBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = A497287118BB51A900F8A419 /* GameBubble.m */; };
+		A497287518BB51A900F8A419 /* GameBubbleBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = A497287318BB51A900F8A419 /* GameBubbleBasic.m */; };
+		A497287918BB51B900F8A419 /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A497287818BB51B900F8A419 /* GameEngine.m */; };
+		A497287C18BB51D300F8A419 /* PhysicalEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A497287B18BB51D300F8A419 /* PhysicalEngine.m */; };
+		A497288218BB51E700F8A419 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A497288018BB51E700F8A419 /* UIImage+Resize.m */; };
+		A4BC205418C0E199003B3427 /* GameDesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC205318C0E199003B3427 /* GameDesignViewController.m */; };
+		A4BC205A18C0E25E003B3427 /* LevelSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC205918C0E25E003B3427 /* LevelSelectViewController.m */; };
+		A4BC205D18C0E32B003B3427 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BC205C18C0E32B003B3427 /* WelcomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A497285118BB50EE00F8A419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A497282318BB50EE00F8A419 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A497282A18BB50EE00F8A419;
+			remoteInfo = BubbleSaga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		714C544518BE20AB001F55EB /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		714C544618BE20AB001F55EB /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		71D2B3B418C31DBE00C276A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		71D2B3B618C328B300C276A2 /* backgroudMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroudMusic.mp3; sourceTree = "<group>"; };
+		71D2B3B818C329B800C276A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		71D2B3BA18C32B3500C276A2 /* music-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music-button.png"; sourceTree = "<group>"; };
+		A459774318C2BF19004A3498 /* RenderViewsInPhysicalEngineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderViewsInPhysicalEngineDelegate.h; sourceTree = "<group>"; };
+		A459774418C2CFA0004A3498 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A459774618C2CFA0004A3498 /* bubble-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-blue.png"; sourceTree = "<group>"; };
+		A459774718C2CFA0004A3498 /* bubble-bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-bomb.png"; sourceTree = "<group>"; };
+		A459774918C2CFA0004A3498 /* bubble-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-green.png"; sourceTree = "<group>"; };
+		A459774A18C2CFA0004A3498 /* bubble-indestructible.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-indestructible.png"; sourceTree = "<group>"; };
+		A459774B18C2CFA0004A3498 /* bubble-lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-lightning.png"; sourceTree = "<group>"; };
+		A459774C18C2CFA0004A3498 /* bubble-orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-orange.png"; sourceTree = "<group>"; };
+		A459774D18C2CFA0004A3498 /* bubble-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-red.png"; sourceTree = "<group>"; };
+		A459774E18C2CFA0004A3498 /* bubble-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-star.png"; sourceTree = "<group>"; };
+		A459774F18C2CFA0004A3498 /* cannon-base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon-base.png"; sourceTree = "<group>"; };
+		A459775118C2CFA0004A3498 /* cannon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannon.png; sourceTree = "<group>"; };
+		A459775218C2CFA0004A3498 /* eraser-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eraser-1.png"; sourceTree = "<group>"; };
+		A459775318C2CFA0004A3498 /* eraser-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eraser-2.png"; sourceTree = "<group>"; };
+		A459776518C2D1E5004A3498 /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background3.png; sourceTree = "<group>"; };
+		A45DE4F918C1907F002D86AD /* GameBubbleIndestructible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleIndestructible.h; sourceTree = "<group>"; };
+		A45DE4FA18C1907F002D86AD /* GameBubbleIndestructible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleIndestructible.m; sourceTree = "<group>"; };
+		A45DE4FC18C190A5002D86AD /* GameBubbleLightening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleLightening.h; sourceTree = "<group>"; };
+		A45DE4FD18C190A5002D86AD /* GameBubbleLightening.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleLightening.m; sourceTree = "<group>"; };
+		A45DE4FF18C190B8002D86AD /* GameBubbleBomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleBomb.h; sourceTree = "<group>"; };
+		A45DE50018C190B8002D86AD /* GameBubbleBomb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleBomb.m; sourceTree = "<group>"; };
+		A45DE50218C190CE002D86AD /* GameBubbleStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleStar.h; sourceTree = "<group>"; };
+		A45DE50318C190CE002D86AD /* GameBubbleStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleStar.m; sourceTree = "<group>"; };
+		A45DE50518C1E61C002D86AD /* FileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileListViewController.h; sourceTree = "<group>"; };
+		A45DE50618C1E61C002D86AD /* FileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileListViewController.m; sourceTree = "<group>"; };
+		A45DE50818C1ED5C002D86AD /* LoadViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadViewDelegate.h; sourceTree = "<group>"; };
+		A47BB47E18C39D1D0042AC39 /* default-level-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-level-1.png"; sourceTree = "<group>"; };
+		A47BB47F18C39D1D0042AC39 /* default-level-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-level-0.png"; sourceTree = "<group>"; };
+		A47BB48018C39D1D0042AC39 /* default-level-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-level-2.png"; sourceTree = "<group>"; };
+		A497282B18BB50EE00F8A419 /* BubbleSaga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleSaga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A497282E18BB50EE00F8A419 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A497283018BB50EE00F8A419 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A497283218BB50EE00F8A419 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A497283618BB50EE00F8A419 /* BubbleSaga-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubbleSaga-Info.plist"; sourceTree = "<group>"; };
+		A497283818BB50EE00F8A419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A497283A18BB50EE00F8A419 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A497283C18BB50EE00F8A419 /* BubbleSaga-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BubbleSaga-Prefix.pch"; sourceTree = "<group>"; };
+		A497283D18BB50EE00F8A419 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A497283E18BB50EE00F8A419 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A497284118BB50EE00F8A419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A497284318BB50EE00F8A419 /* GamePlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePlayViewController.h; sourceTree = "<group>"; };
+		A497284418BB50EE00F8A419 /* GamePlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlayViewController.m; sourceTree = "<group>"; };
+		A497284618BB50EE00F8A419 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A497284C18BB50EE00F8A419 /* BubbleSagaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleSagaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A497284D18BB50EE00F8A419 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A497285518BB50EE00F8A419 /* BubbleSagaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubbleSagaTests-Info.plist"; sourceTree = "<group>"; };
+		A497285718BB50EE00F8A419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A497285918BB50EE00F8A419 /* BubbleSagaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleSagaTests.m; sourceTree = "<group>"; };
+		A497286318BB50FF00F8A419 /* BubbleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleBuffer.h; sourceTree = "<group>"; };
+		A497286418BB50FF00F8A419 /* BubbleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleBuffer.m; sourceTree = "<group>"; };
+		A497286518BB50FF00F8A419 /* BubbleCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleCollection.h; sourceTree = "<group>"; };
+		A497286618BB50FF00F8A419 /* BubbleCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleCollection.m; sourceTree = "<group>"; };
+		A497286918BB517E00F8A419 /* ConstantVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantVariables.h; sourceTree = "<group>"; };
+		A497287018BB51A900F8A419 /* GameBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubble.h; sourceTree = "<group>"; };
+		A497287118BB51A900F8A419 /* GameBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubble.m; sourceTree = "<group>"; };
+		A497287218BB51A900F8A419 /* GameBubbleBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleBasic.h; sourceTree = "<group>"; };
+		A497287318BB51A900F8A419 /* GameBubbleBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBubbleBasic.m; sourceTree = "<group>"; };
+		A497287618BB51B900F8A419 /* GameBubbleViewUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBubbleViewUpdateDelegate.h; sourceTree = "<group>"; };
+		A497287718BB51B900F8A419 /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
+		A497287818BB51B900F8A419 /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
+		A497287A18BB51D300F8A419 /* PhysicalEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicalEngine.h; sourceTree = "<group>"; };
+		A497287B18BB51D300F8A419 /* PhysicalEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicalEngine.m; sourceTree = "<group>"; };
+		A497287F18BB51E700F8A419 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		A497288018BB51E700F8A419 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		A4BC205218C0E199003B3427 /* GameDesignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDesignViewController.h; sourceTree = "<group>"; };
+		A4BC205318C0E199003B3427 /* GameDesignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDesignViewController.m; sourceTree = "<group>"; };
+		A4BC205818C0E25E003B3427 /* LevelSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectViewController.h; sourceTree = "<group>"; };
+		A4BC205918C0E25E003B3427 /* LevelSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectViewController.m; sourceTree = "<group>"; };
+		A4BC205B18C0E32B003B3427 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		A4BC205C18C0E32B003B3427 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A497282818BB50EE00F8A419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D2B3B918C329B800C276A2 /* AVFoundation.framework in Frameworks */,
+				A497283118BB50EE00F8A419 /* CoreGraphics.framework in Frameworks */,
+				A497283318BB50EE00F8A419 /* UIKit.framework in Frameworks */,
+				A497282F18BB50EE00F8A419 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A497284918BB50EE00F8A419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A497284E18BB50EE00F8A419 /* XCTest.framework in Frameworks */,
+				A497285018BB50EE00F8A419 /* UIKit.framework in Frameworks */,
+				A497284F18BB50EE00F8A419 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		714C544418BE01D1001F55EB /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A47BB47E18C39D1D0042AC39 /* default-level-1.png */,
+				A47BB47F18C39D1D0042AC39 /* default-level-0.png */,
+				A47BB48018C39D1D0042AC39 /* default-level-2.png */,
+				71D2B3B418C31DBE00C276A2 /* icon.png */,
+				A459776518C2D1E5004A3498 /* background3.png */,
+				A459774418C2CFA0004A3498 /* background.png */,
+				A459774618C2CFA0004A3498 /* bubble-blue.png */,
+				A459774718C2CFA0004A3498 /* bubble-bomb.png */,
+				71D2B3BA18C32B3500C276A2 /* music-button.png */,
+				A459774918C2CFA0004A3498 /* bubble-green.png */,
+				A459774A18C2CFA0004A3498 /* bubble-indestructible.png */,
+				A459774B18C2CFA0004A3498 /* bubble-lightning.png */,
+				A459774C18C2CFA0004A3498 /* bubble-orange.png */,
+				A459774D18C2CFA0004A3498 /* bubble-red.png */,
+				A459774E18C2CFA0004A3498 /* bubble-star.png */,
+				A459774F18C2CFA0004A3498 /* cannon-base.png */,
+				A459775118C2CFA0004A3498 /* cannon.png */,
+				A459775218C2CFA0004A3498 /* eraser-1.png */,
+				A459775318C2CFA0004A3498 /* eraser-2.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		A41404EF18BB5BFC00308899 /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A497287718BB51B900F8A419 /* GameEngine.h */,
+				A497287818BB51B900F8A419 /* GameEngine.m */,
+				A497287A18BB51D300F8A419 /* PhysicalEngine.h */,
+				A497287B18BB51D300F8A419 /* PhysicalEngine.m */,
+				A459774318C2BF19004A3498 /* RenderViewsInPhysicalEngineDelegate.h */,
+			);
+			name = GameEngine;
+			sourceTree = "<group>";
+		};
+		A41404F018BB5C1A00308899 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4BC205B18C0E32B003B3427 /* WelcomeViewController.h */,
+				A4BC205C18C0E32B003B3427 /* WelcomeViewController.m */,
+				A4BC205818C0E25E003B3427 /* LevelSelectViewController.h */,
+				A4BC205918C0E25E003B3427 /* LevelSelectViewController.m */,
+				A4BC205218C0E199003B3427 /* GameDesignViewController.h */,
+				A4BC205318C0E199003B3427 /* GameDesignViewController.m */,
+				A45DE50518C1E61C002D86AD /* FileListViewController.h */,
+				A45DE50618C1E61C002D86AD /* FileListViewController.m */,
+				A497284318BB50EE00F8A419 /* GamePlayViewController.h */,
+				A497284418BB50EE00F8A419 /* GamePlayViewController.m */,
+				A45DE50818C1ED5C002D86AD /* LoadViewDelegate.h */,
+				A497287618BB51B900F8A419 /* GameBubbleViewUpdateDelegate.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A41404F118BB5C3100308899 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A497286318BB50FF00F8A419 /* BubbleBuffer.h */,
+				A497286418BB50FF00F8A419 /* BubbleBuffer.m */,
+				A497286518BB50FF00F8A419 /* BubbleCollection.h */,
+				A497286618BB50FF00F8A419 /* BubbleCollection.m */,
+				A497287018BB51A900F8A419 /* GameBubble.h */,
+				A497287118BB51A900F8A419 /* GameBubble.m */,
+				A497287218BB51A900F8A419 /* GameBubbleBasic.h */,
+				A497287318BB51A900F8A419 /* GameBubbleBasic.m */,
+				A45DE4F918C1907F002D86AD /* GameBubbleIndestructible.h */,
+				A45DE4FA18C1907F002D86AD /* GameBubbleIndestructible.m */,
+				A45DE4FC18C190A5002D86AD /* GameBubbleLightening.h */,
+				A45DE4FD18C190A5002D86AD /* GameBubbleLightening.m */,
+				A45DE4FF18C190B8002D86AD /* GameBubbleBomb.h */,
+				A45DE50018C190B8002D86AD /* GameBubbleBomb.m */,
+				A45DE50218C190CE002D86AD /* GameBubbleStar.h */,
+				A45DE50318C190CE002D86AD /* GameBubbleStar.m */,
+				A497286918BB517E00F8A419 /* ConstantVariables.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A497282218BB50EE00F8A419 = {
+			isa = PBXGroup;
+			children = (
+				A497283418BB50EE00F8A419 /* BubbleSaga */,
+				A497285318BB50EE00F8A419 /* BubbleSagaTests */,
+				A497282D18BB50EE00F8A419 /* Frameworks */,
+				A497282C18BB50EE00F8A419 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A497282C18BB50EE00F8A419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A497282B18BB50EE00F8A419 /* BubbleSaga.app */,
+				A497284C18BB50EE00F8A419 /* BubbleSagaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A497282D18BB50EE00F8A419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71D2B3B818C329B800C276A2 /* AVFoundation.framework */,
+				A497282E18BB50EE00F8A419 /* Foundation.framework */,
+				A497283018BB50EE00F8A419 /* CoreGraphics.framework */,
+				A497283218BB50EE00F8A419 /* UIKit.framework */,
+				A497284D18BB50EE00F8A419 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A497283418BB50EE00F8A419 /* BubbleSaga */ = {
+			isa = PBXGroup;
+			children = (
+				A497284018BB50EE00F8A419 /* Main.storyboard */,
+				A41404F018BB5C1A00308899 /* Controller */,
+				A41404EF18BB5BFC00308899 /* GameEngine */,
+				A41404F118BB5C3100308899 /* Model */,
+				A497284618BB50EE00F8A419 /* Images.xcassets */,
+				714C544418BE01D1001F55EB /* image */,
+				A497283518BB50EE00F8A419 /* Supporting Files */,
+			);
+			path = BubbleSaga;
+			sourceTree = "<group>";
+		};
+		A497283518BB50EE00F8A419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71D2B3B618C328B300C276A2 /* backgroudMusic.mp3 */,
+				714C544518BE20AB001F55EB /* Stack.h */,
+				714C544618BE20AB001F55EB /* Stack.m */,
+				A497283D18BB50EE00F8A419 /* AppDelegate.h */,
+				A497283E18BB50EE00F8A419 /* AppDelegate.m */,
+				A497287F18BB51E700F8A419 /* UIImage+Resize.h */,
+				A497288018BB51E700F8A419 /* UIImage+Resize.m */,
+				A497283618BB50EE00F8A419 /* BubbleSaga-Info.plist */,
+				A497283718BB50EE00F8A419 /* InfoPlist.strings */,
+				A497283A18BB50EE00F8A419 /* main.m */,
+				A497283C18BB50EE00F8A419 /* BubbleSaga-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A497285318BB50EE00F8A419 /* BubbleSagaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A497285918BB50EE00F8A419 /* BubbleSagaTests.m */,
+				A497285418BB50EE00F8A419 /* Supporting Files */,
+			);
+			path = BubbleSagaTests;
+			sourceTree = "<group>";
+		};
+		A497285418BB50EE00F8A419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A497285518BB50EE00F8A419 /* BubbleSagaTests-Info.plist */,
+				A497285618BB50EE00F8A419 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A497282A18BB50EE00F8A419 /* BubbleSaga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A497285D18BB50EE00F8A419 /* Build configuration list for PBXNativeTarget "BubbleSaga" */;
+			buildPhases = (
+				A497282718BB50EE00F8A419 /* Sources */,
+				A497282818BB50EE00F8A419 /* Frameworks */,
+				A497282918BB50EE00F8A419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BubbleSaga;
+			productName = BubbleSaga;
+			productReference = A497282B18BB50EE00F8A419 /* BubbleSaga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A497284B18BB50EE00F8A419 /* BubbleSagaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A497286018BB50EE00F8A419 /* Build configuration list for PBXNativeTarget "BubbleSagaTests" */;
+			buildPhases = (
+				A497284818BB50EE00F8A419 /* Sources */,
+				A497284918BB50EE00F8A419 /* Frameworks */,
+				A497284A18BB50EE00F8A419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A497285218BB50EE00F8A419 /* PBXTargetDependency */,
+			);
+			name = BubbleSagaTests;
+			productName = BubbleSagaTests;
+			productReference = A497284C18BB50EE00F8A419 /* BubbleSagaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A497282318BB50EE00F8A419 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "NUS CS3217";
+				TargetAttributes = {
+					A497284B18BB50EE00F8A419 = {
+						TestTargetID = A497282A18BB50EE00F8A419;
+					};
+				};
+			};
+			buildConfigurationList = A497282618BB50EE00F8A419 /* Build configuration list for PBXProject "BubbleSaga" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A497282218BB50EE00F8A419;
+			productRefGroup = A497282C18BB50EE00F8A419 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A497282A18BB50EE00F8A419 /* BubbleSaga */,
+				A497284B18BB50EE00F8A419 /* BubbleSagaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A497282918BB50EE00F8A419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A497284718BB50EE00F8A419 /* Images.xcassets in Resources */,
+				A459776618C2D1E5004A3498 /* background3.png in Resources */,
+				A459776318C2CFA0004A3498 /* eraser-2.png in Resources */,
+				A47BB48218C39D1D0042AC39 /* default-level-0.png in Resources */,
+				A459776118C2CFA0004A3498 /* cannon.png in Resources */,
+				A459775418C2CFA0004A3498 /* background.png in Resources */,
+				A459775B18C2CFA0004A3498 /* bubble-lightning.png in Resources */,
+				A459775F18C2CFA0004A3498 /* cannon-base.png in Resources */,
+				71D2B3B518C31DBE00C276A2 /* icon.png in Resources */,
+				A497283918BB50EE00F8A419 /* InfoPlist.strings in Resources */,
+				A459775718C2CFA0004A3498 /* bubble-bomb.png in Resources */,
+				A459775D18C2CFA0004A3498 /* bubble-red.png in Resources */,
+				A459775618C2CFA0004A3498 /* bubble-blue.png in Resources */,
+				A459775918C2CFA0004A3498 /* bubble-green.png in Resources */,
+				A459775C18C2CFA0004A3498 /* bubble-orange.png in Resources */,
+				A459775A18C2CFA0004A3498 /* bubble-indestructible.png in Resources */,
+				A497284218BB50EE00F8A419 /* Main.storyboard in Resources */,
+				A459775E18C2CFA0004A3498 /* bubble-star.png in Resources */,
+				A459776218C2CFA0004A3498 /* eraser-1.png in Resources */,
+				71D2B3B718C328B300C276A2 /* backgroudMusic.mp3 in Resources */,
+				A47BB48318C39D1D0042AC39 /* default-level-2.png in Resources */,
+				A47BB48118C39D1D0042AC39 /* default-level-1.png in Resources */,
+				71D2B3BB18C32B3500C276A2 /* music-button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A497284A18BB50EE00F8A419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A497285818BB50EE00F8A419 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A497282718BB50EE00F8A419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714C544718BE20AB001F55EB /* Stack.m in Sources */,
+				A4BC205418C0E199003B3427 /* GameDesignViewController.m in Sources */,
+				A45DE50718C1E61C002D86AD /* FileListViewController.m in Sources */,
+				A497284518BB50EE00F8A419 /* GamePlayViewController.m in Sources */,
+				A497287418BB51A900F8A419 /* GameBubble.m in Sources */,
+				A497287518BB51A900F8A419 /* GameBubbleBasic.m in Sources */,
+				A4BC205D18C0E32B003B3427 /* WelcomeViewController.m in Sources */,
+				A497283F18BB50EE00F8A419 /* AppDelegate.m in Sources */,
+				A45DE50418C190CE002D86AD /* GameBubbleStar.m in Sources */,
+				A497283B18BB50EE00F8A419 /* main.m in Sources */,
+				A45DE4FE18C190A5002D86AD /* GameBubbleLightening.m in Sources */,
+				A497286718BB50FF00F8A419 /* BubbleBuffer.m in Sources */,
+				A497286818BB50FF00F8A419 /* BubbleCollection.m in Sources */,
+				A497287918BB51B900F8A419 /* GameEngine.m in Sources */,
+				A497288218BB51E700F8A419 /* UIImage+Resize.m in Sources */,
+				A45DE50118C190B8002D86AD /* GameBubbleBomb.m in Sources */,
+				A45DE4FB18C1907F002D86AD /* GameBubbleIndestructible.m in Sources */,
+				A497287C18BB51D300F8A419 /* PhysicalEngine.m in Sources */,
+				A4BC205A18C0E25E003B3427 /* LevelSelectViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A497284818BB50EE00F8A419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A497285A18BB50EE00F8A419 /* BubbleSagaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A497285218BB50EE00F8A419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A497282A18BB50EE00F8A419 /* BubbleSaga */;
+			targetProxy = A497285118BB50EE00F8A419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A497283718BB50EE00F8A419 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A497283818BB50EE00F8A419 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A497284018BB50EE00F8A419 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A497284118BB50EE00F8A419 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A497285618BB50EE00F8A419 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A497285718BB50EE00F8A419 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A497285B18BB50EE00F8A419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A497285C18BB50EE00F8A419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A497285E18BB50EE00F8A419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleSaga/BubbleSaga-Prefix.pch";
+				INFOPLIST_FILE = "BubbleSaga/BubbleSaga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A497285F18BB50EE00F8A419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleSaga/BubbleSaga-Prefix.pch";
+				INFOPLIST_FILE = "BubbleSaga/BubbleSaga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A497286118BB50EE00F8A419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BubbleSaga.app/BubbleSaga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleSaga/BubbleSaga-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BubbleSagaTests/BubbleSagaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A497286218BB50EE00F8A419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BubbleSaga.app/BubbleSaga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BubbleSaga/BubbleSaga-Prefix.pch";
+				INFOPLIST_FILE = "BubbleSagaTests/BubbleSagaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A497282618BB50EE00F8A419 /* Build configuration list for PBXProject "BubbleSaga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A497285B18BB50EE00F8A419 /* Debug */,
+				A497285C18BB50EE00F8A419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A497285D18BB50EE00F8A419 /* Build configuration list for PBXNativeTarget "BubbleSaga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A497285E18BB50EE00F8A419 /* Debug */,
+				A497285F18BB50EE00F8A419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A497286018BB50EE00F8A419 /* Build configuration list for PBXNativeTarget "BubbleSagaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A497286118BB50EE00F8A419 /* Debug */,
+				A497286218BB50EE00F8A419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A497282318BB50EE00F8A419 /* Project object */;
+}
